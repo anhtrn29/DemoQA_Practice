@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-08-16T18:55:03 ICT" name="Default suite" finished-at="2025-08-16T18:55:13 ICT" duration-ms="9767">
+    <groups>
+    </groups>
+    <test started-at="2025-08-16T18:55:03 ICT" name="Default test" finished-at="2025-08-16T18:55:13 ICT" duration-ms="9767">
+      <class name="tests.FramesTest">
+        <test-method is-config="true" signature="openWeb()[pri:0, instance:tests.FramesTest@543588e6]" started-at="2025-08-16T18:55:03 ICT" name="openWeb" finished-at="2025-08-16T18:55:12 ICT" duration-ms="8888" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openWeb -->
+        <test-method signature="testFrames()[pri:0, instance:tests.FramesTest@543588e6]" started-at="2025-08-16T18:55:12 ICT" name="testFrames" finished-at="2025-08-16T18:55:13 ICT" duration-ms="823" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testFrames -->
+      </class> <!-- tests.FramesTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
