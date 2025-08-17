@@ -3,12 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="tests.WebTableTest">
+      <class name="tests.FramesTest">
         <methods>
-          <include name="setUp"/>
-          <include name="submitRegistrationForm"/>
+          <include name="openWeb"/>
+          <include name="testFrames"/>
         </methods>
-      </class> <!-- tests.WebTableTest -->
+      </class> <!-- tests.FramesTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

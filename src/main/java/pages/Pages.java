@@ -4,12 +4,11 @@ import org.openqa.selenium.WebDriver;
 
 import common.TestBase;
 
-public class Page {
-
+public class Pages {
 	public WebDriver webDriver;
 	public TestBase testBase = new TestBase();
 	
-	public Page(WebDriver dr) {
+	public Pages(WebDriver dr) {
 		testBase.driver = dr;
 		this.webDriver = testBase.driver;
 	}
