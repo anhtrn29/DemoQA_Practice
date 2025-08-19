@@ -3,12 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="tests.FramesTest">
+      <class name="tests.ModalDialogsTest">
         <methods>
           <include name="openWeb"/>
-          <include name="testFrames"/>
+          <include name="testSmallModal"/>
         </methods>
-      </class> <!-- tests.FramesTest -->
+      </class> <!-- tests.ModalDialogsTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
