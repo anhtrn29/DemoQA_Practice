@@ -7,6 +7,8 @@ public class AlertsFrameWindowsPage extends Pages {
 	public By lbBrowserWindow = By.xpath("//span[text()='Browser Windows']");
 	public By lbAlert = By.xpath("//span[text()='Alerts']");
 	public By lbframes = By.xpath("//span[text()='Frames']");
+	public By lbNestedFrames = By.xpath("//span[text()='Nested Frames']");
+	public By lbModalDialogs = By.xpath("//span[text()='Modal Dialogs']");
 	public AlertsFrameWindowsPage(WebDriver dr) {
 		super(dr);
 	}
@@ -25,5 +27,15 @@ public class AlertsFrameWindowsPage extends Pages {
 		testBase.scrollToElement(lbframes);
 		testBase.clickOnElement(lbframes);
 		return new FramesPage(webDriver);
+	}
+	public NestedFramesPage clickOnNestedFramesPage() {
+		testBase.scrollToElement(lbNestedFrames);
+		testBase.clickOnElement(lbNestedFrames);
+		return new NestedFramesPage(webDriver);
+	}
+	public ModalDialogsPage clickOnDialogsPage() {
+		testBase.scrollToElement(lbModalDialogs);
+		testBase.clickOnElement(lbModalDialogs);
+		return new ModalDialogsPage(webDriver);
 	}
 }
