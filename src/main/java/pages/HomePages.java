@@ -7,7 +7,7 @@ public class HomePages extends Pages {
 	public By lbElements = By.xpath("//h5[text()='Elements']");
 	public By lbForms = By.xpath("//h5[text()='Forms']");
 	public By lbAlertFrameWindows = By.xpath("//h5[text()='Alerts, Frame & Windows']");
-
+	public By lbWidget = By.xpath("//h5[text()='Widgets']");
 	public HomePages(WebDriver dr) {
 		super(dr);
 	}
@@ -27,5 +27,10 @@ public class HomePages extends Pages {
 		testBase.scrollToElement(lbAlertFrameWindows);
 		testBase.clickOnElement(lbAlertFrameWindows);
 		return new AlertsFrameWindowsPage(webDriver);
+	}
+	public WidgetPage clickOnWidgetPage() {
+		testBase.scrollToElement(lbWidget);
+		testBase.clickOnElement(lbWidget);
+		return new WidgetPage(webDriver);
 	}
 }

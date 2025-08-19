@@ -2,20 +2,20 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-08-19T11:57:57 ICT" name="Default suite" finished-at="2025-08-19T11:58:05 ICT" duration-ms="7270">
+  <suite started-at="2025-08-19T16:25:36 ICT" name="Default suite" finished-at="2025-08-19T16:25:43 ICT" duration-ms="6559">
     <groups>
     </groups>
-    <test started-at="2025-08-19T11:57:57 ICT" name="Default test" finished-at="2025-08-19T11:58:05 ICT" duration-ms="7270">
-      <class name="tests.ModalDialogsTest">
-        <test-method is-config="true" signature="openWeb()[pri:0, instance:tests.ModalDialogsTest@543588e6]" started-at="2025-08-19T11:57:57 ICT" name="openWeb" finished-at="2025-08-19T11:58:04 ICT" duration-ms="6367" status="PASS">
+    <test started-at="2025-08-19T16:25:36 ICT" name="Default test" finished-at="2025-08-19T16:25:43 ICT" duration-ms="6559">
+      <class name="tests.AccordianTest">
+        <test-method is-config="true" signature="openWeb()[pri:0, instance:tests.AccordianTest@543588e6]" started-at="2025-08-19T16:25:36 ICT" name="openWeb" finished-at="2025-08-19T16:25:42 ICT" duration-ms="5990" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openWeb -->
-        <test-method signature="testSmallModal()[pri:0, instance:tests.ModalDialogsTest@543588e6]" started-at="2025-08-19T11:58:04 ICT" name="testSmallModal" finished-at="2025-08-19T11:58:05 ICT" duration-ms="877" status="PASS">
+        <test-method signature="testAccordian()[pri:0, instance:tests.AccordianTest@543588e6]" started-at="2025-08-19T16:25:42 ICT" name="testAccordian" finished-at="2025-08-19T16:25:43 ICT" duration-ms="535" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testSmallModal -->
-      </class> <!-- tests.ModalDialogsTest -->
+        </test-method> <!-- testAccordian -->
+      </class> <!-- tests.AccordianTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

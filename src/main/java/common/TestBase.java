@@ -17,6 +17,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 public class TestBase {
 	public WebDriver driver;
 	public String mainWindowHandle;
+
 	public void openWeb(String url, String browser) {
 		if (browser.equalsIgnoreCase("Chrome")) {
 			System.getProperty("webDriver.chrome.driver",
@@ -68,35 +69,41 @@ public class TestBase {
 	}
 
 	public void switchToNewWindow() {
-	this.mainWindowHandle = driver.getWindowHandle();
-		for(String handles:driver.getWindowHandles()) {
-			if(!handles.equals(mainWindowHandle)) {
+		this.mainWindowHandle = driver.getWindowHandle();
+		for (String handles : driver.getWindowHandles()) {
+			if (!handles.equals(mainWindowHandle)) {
 				driver.switchTo().window(handles);
 				break;
 			}
 		}
 	}
+
 	public void switchToMainWindow() {
 		driver.switchTo().window(mainWindowHandle);
 	}
-	
+
 	public Alert switchToAlert() {
 		return driver.switchTo().alert();
-		
+
 	}
+
 	public void switchToFrames(By frameLocator) {
 		WebElement frameElement = driver.findElement(frameLocator);
 		driver.switchTo().frame(frameElement);
 	}
+
 	public void switchToFramesIndex(int framesIndex) {
 		driver.switchTo().frame(framesIndex);
 	}
+
 	public void switchToFrameString(String frames) {
 		driver.switchTo().frame(frames);
 	}
-	public void switchToDefault () {
+
+	public void switchToDefault() {
 		driver.switchTo().defaultContent();
 	}
+
 	public void inputData(By locator, CharSequence text) {
 		WebElement inputElement = driver.findElement(locator);
 		scrollToElement(locator);
